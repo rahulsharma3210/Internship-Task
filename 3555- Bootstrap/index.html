@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Responsive Sidebar</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link larger-font portfolio-heading" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <input type="text" class="form-control" placeholder="Search">
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i> Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary" onclick="toggleMode()">Theme</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 w-10 d-md-block bg-info mt-1 sidebar">
+                <div class="sidebar-sticky ">
+                    <ul class="nav  pt-10 mt-5 flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link mt-3 mx-auto active" href="#">
+                                <i class="fas fa-home fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-info-circle fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-question-circle fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-9 ml-sm-auto mx-auto col-lg-10 px-md-4">
+                <!-- Your main content goes here -->
+
+                <div class="main pt-100">
+                    <div class="container-fluid  pt-100">
+                        <div class="row row-cols-1 row-cols-lg-3 g-4 g-lg-3 ">
+
+                            <div class="col mt-4  ">
+                                <div class="card   bg-warning ">
+                                    
+                                    <div class="card-body  ">
+                                        January 25, 2024
+                                        <h5 class="card-title text-center">Web Designing</h5>
+                                        <p class="card-text text-center">Prototyping
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-body-secondary">
+                                        4 days left
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Other cards go here -->
+                            <div class="col mt-4  ">
+                                <div class="card   bg-light ">
+                                   
+                                    <div class="card-body  ">
+                                        January 25, 2024
+                                        <h5 class="card-title text-center">Web Designing</h5>
+                                        <p class="card-text text-center" >Prototyping
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-body-secondary">
+                                        4 days left
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-4  ">
+                                <div class="card bg-secondry ">
+                                   
+                                    <div class="card-body  ">
+                                        January 25, 2024
+                                        <h5 class="card-title text-center">Web Designing</h5>
+                                        <p class="card-text text-center">Prototyping
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-body-secondary">
+                                        4 days left
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-4  ">
+                                <div class="card   bg-primary ">
+                                  
+                                    <div class="card-body  ">
+                                        January 25, 2024
+                                        <h5 class="card-title text-center">Web Designing</h5>
+                                        <p class="card-text text-center">Prototyping
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-body-secondary">
+                                        4 days left
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-4  ">
+                                <div class="card   bg-info ">
+                                  
+                                    <div class="card-body  ">
+                                        January 25, 2024
+                                        <h5 class="card-title text-center">Web Designing</h5>
+                                        <p class="card-text text-center">Prototyping
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-body-secondary">
+                                        4 days left
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-4  ">
+                                <div class="card   bg-success ">
+                                    
+                                    <div class="card-body  ">
+                                        January 25, 2024
+                                        <h5 class="card-title text-center">Web Designing</h5>
+                                        <p class="card-text text-center">Prototyping
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-body-secondary">
+                                        4 days left
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
+</body>
+
+</html>

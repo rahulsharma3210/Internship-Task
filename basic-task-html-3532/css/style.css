@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  
+  .container {
+    /* background-color: #e5e5fd; */
+    /* min-height: 100vh; */
+    /* border: 10px blue solid; */
+  }
+  
+  .content{
+      margin: 0 auto;
+      max-width: 900px;
+      border: 1.5px solid slategrey;
+  }
+
+ .main-info{
+    background-color: aliceblue ;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 60px;
+ }
+  
+  .image_container , img{
+  width: 280px;
+  height: 300px;
+  /* margin: 5px; */
+  }
+
+  .intro_section{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      align-items: flex-start;
+  }
+  .intro_section h1{
+    
+      font-size: 50px;
+      font-weight: bold;
+      color: #1d1d4c;
+      text-transform: uppercase;
+  }
+  .intro_section h4{
+      text-align: start;
+      font-size: 25px;
+  }
+  .intro_container{
+      border-radius: 50%;
+      overflow: hidden;
+  }
+   
+ 
+  ul {
+    list-style-type: none;
+    text-align: start;
+    
+  }
+  .image_container{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.profile{
+    background-color: aliceblue;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.profile h2{
+    margin: 8px;
+}
+.prof{
+  display: flex;
+}
+
+.skills{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.skill-item {
+  /* padding-left: 100px; */
+  justify-content: space-between;
+}
+p{
+  text-align: justify;
+}
+.exp{
+  display: flex;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .education{
+    margin-top: 15px;
+
+  }
+  .education h1{
+    margin-left: 20px;
+  }
+  .education table{
+    min-width: 880px;
+  }
+ 
+
+  
+
+  .skills h2{
+    margin: 10px;
+  }
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .skills-column {
+    flex: 1;
+  }
+  .skills-column h2 {
+    text-align: center;
+  }
+  .skill {
+    margin-bottom: 8px;
+  }
+
+  .exp-info{
+    /* margin-left: 50px; */
+  }
+
+  .prof p{
+    margin-left: 20px;
+  }

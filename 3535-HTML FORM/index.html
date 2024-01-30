@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-content">
+
+            <form action="">
+                <div class="box-1">
+                    <h1>Primary Details</h1>
+
+                    <div>
+                        <label for="medicare-number" class="medicare-label">Medicare No:</label>
+                        <input type="text" name="medicare-number" class="medicare-input" placeholder="Enter Medicare No"
+                            required>
+
+                        <input type="date" name="medicare-expiry" class="medicare-date" required>
+
+                        <input type="text" name="additional-field" class="medicare-input">
+                    </div>
+                    <div>
+                        <label for="job-role">title</label>
+                        <select name="job-role" id="job-role">
+                            <option value="">Select patient</option>
+                            <option value="frontend">Heart patient</option>
+                            <option value="backend">Ortho Patient</option>
+                            <option value="full-stack"> Neuro Patient</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="name">Name: </label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="name">Pref. Name: </label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="name">DOB: </label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label for="sex">SEX: </label>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                          <label for="html">Male</label>
+                          <input type="radio" id="css" name="fav_language" value="CSS">
+                          <label for="css">Female</label>
+                    </div>
+                    <div>
+                        <label for="name">Family Name: </label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="box-1">
+                    <h2>Contact Details</h2>
+                    <div>
+                        <label for="phone">Phone: </label>
+                        <input type="number">
+                        <label for="">Home</label>
+                        <input type="number">
+                        <label for="">office</label>
+                    </div>
+                    <div>
+                        <label for="">Emergancy Number</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="mail">
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <h1>Address Details</h1>
+                    <div class="box3-1">
+                        <h3>Residentail Address</h3>
+                        <div>
+                            <label for="">Address 1:</label>
+                            <input style="width: 500px;" type="text">
+                        </div>
+                        <div>
+                            <label for="">Address 2:</label>
+                            <input style="width: 500px;" type="text">
+                        </div>
+                        <div>
+                            <label for="">Suburb:</label>
+                            <input type="text">
+                            <label for="">State:</label>
+                            <!-- <input type="text" placeholder="Rajsthan"> -->
+                            <select name="job-role" id="job-role">
+                                <option value="">Select state</option>
+                                <option value="frontend">Rajsthan</option>
+                                <option value="backend">U.P</option>
+                                <option value="full-stack"> Panjab</option>
+                                <option value="full-stack"> Haryana</option>
+                                <option value="full-stack"> Gujrat</option>
+                                <option value="full-stack"> M.P</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Postel Code:</label>
+                            <input type="text" placeholder="303820">
+                            <label for="">Country</label>
+                            <!-- <input type="text" placeholder="India"> -->
+                            <select name="job-role" id="job-role">
+                                <option value="">Select Country</option>
+                                <option value="frontend">India</option>
+                                <option value="backend">Nepal</option>
+                                <option value="full-stack">U.S</option>
+                                <option value="full-stack">Germany</option>
+                                <option value="full-stack">England</option>
+                                <option value="full-stack">France</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="box3-1">
+                        <h3>Single Address</h3>
+                        <label for="">Are mailing address and residentail address same? yes</label> <input
+                        type="checkbox">
+    
+                    </div> -->
+                    <div class="box3-1">
+                        <h3>Single Address</h3>
+                        <label>
+                          Are mailing address and residential address the same?
+                          <input type="checkbox">
+                        </label>
+                        <!-- <button type="button"></button> -->
+                      </div>
+                    <div class="box3-1">
+                        <h3>Mailing Address</h3>
+                        <div>
+                            <label for="">Address 1:</label>
+                            <input style="width: 500px;" type="text">
+                        </div>
+                        <div>
+                            <label for="">Address 2:</label>
+                            <input style="width: 500px;" type="text">
+                        </div>
+                        <div>
+                            <label for="">Suburb:</label>
+                            <input type="text">
+                            <label for="">State:</label>
+                            <input type="text" placeholder="Rajsthan">
+                        </div>
+                        <div>
+                            <label for="">Postel Code:</label>
+                            <input type="text" placeholder="303820">
+                            <label for="">Country</label>
+                            <input type="text" placeholder="India">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div>
+                        <label for="">IHI Number</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="">Number Status </label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="">Record Status</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="">Last Updated</label>
+                        <input type="text">
+                    </div>
+                    <div class="button-container">
+                        <button style="margin-right:6px ;" type="submit">Submit Now</button>
+                        <button style="margin: 2px;" type="submit">Clear</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

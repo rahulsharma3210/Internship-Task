@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: grey;
+  }
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .main-content {
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgb(200,232,246);
+    margin: 0 auto;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.2);
+    margin-top: 50px;
+    border-radius: 9px;
+  }
+
+/* box-1 css */
+
+  .box-1{
+    border: solid 1.5px blue;
+    /* display: flex; */
+    align-items: center;
+    padding: 10px;
+    margin-top: 3px;
+  }
+.medicare-label {
+    margin-right: 10px;
+}
+
+.medicare-input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.medicare-date {
+    padding: 8px;
+    margin-right: 10px;
+    width: 150px;}
+
+    label{
+        font-size: 20px;
+        margin-top: 5px;
+      }
+
+  .box3-1{
+    border: solid 1.5px blue;
+    /* display: flex; */
+    align-items: center;
+    padding: 10px;
+    margin-top: 3px;
+  }    
+
+  /* new css for box3-1 */
+  /* .box3-1 {
+    text-align: justify;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  } */
+
+  .box3-1 label {
+    /* display: flex; */
+    align-items: center; /* Align label content vertically */
+  }
+
+  .box3-1 input[type="checkbox"] {
+    margin-left: 5px; /* Add some space between label and checkbox */
+    transform: scale(1.5); /* Adjust the checkbox size as needed */
+  }
+
+
+  button{
+    background-color: blue;
+    border: transparent solid 2px;
+    padding:5px 10px;
+    
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+  }
+  button:hover{
+    background-color: rgb(200,232,246);
+    color: blue;
+    border: 2px solid blue;
+    transition: 0.3s case-out;
+    cursor: pointer;
+  }
+  .button-container{
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 5px 10px;
+    display: flex;
+
+  }
+
+  input{
+    height: 25px;
+  }

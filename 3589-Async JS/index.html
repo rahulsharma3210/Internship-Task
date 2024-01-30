@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Listing</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+<div class="container  mt-5">
+  <h2>User Listing App</h2>
+  <div id="userList"></div>
+  
+</div>
+
+<div class="modal fade" id="userDetailsModal" tabindex="-1" role="dialog" aria-labelledby="userDetailsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="userDetailsModalLabel">User Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="userDetails"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('https://gorest.co.in/public/v2/users/')
+      .then(response => response.json())
+      .then(users => renderUserList(users))
+      .catch(error => console.error('Error fetching user data:', error));
+
+    function renderUserList(users) {
+      const userListContainer = document.getElementById('userList');
+      userListContainer.innerHTML = '';
+
+      users.forEach(user => {
+        const userCard = document.createElement('div');
+        userCard.className = 'card mb-3';
+        userCard.innerHTML = `
+          <div class="card-body">
+            <h5 class="card-title">${user.name}</h5>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#userDetailsModal" onclick="getUserDetails(${user.id})">
+              View More
+            </button>
+          </div>
+        `;
+        userListContainer.appendChild(userCard);
+      });
+    }
+
+    window.getUserDetails = async function(userId) {
+      try {
+        const userDetailsResponse = await fetch(`https://gorest.co.in/public/v2/users/${userId}`);
+        const userDetails = await userDetailsResponse.json();
+
+        // const userProjectsResponse = await fetch(`https://gorest.co.in/public/v2/users/${userId}/projects`);
+        // const userProjects = await userProjectsResponse.json();
+
+        const userDetailsContainer = document.getElementById('userDetails');
+        userDetailsContainer.innerHTML = `
+          <p><strong>Name:</strong> ${userDetails.name}</p>
+          <p><strong>Email:</strong> ${userDetails.email}</p>
+          <p><strong>Phone:</strong> ${userDetails.phone}</p>
+        
+        `;
+      } catch (error) {
+        console.error('Error fetching user details:', error);
+      }
+    };
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- <p><strong>Projects:</strong></p>
+<ul>
+  ${userProjects.map(project => `<li>${project.name}</li>`).join('')}
+</ul> -->
