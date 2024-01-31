@@ -1,0 +1,47 @@
+ here are some common Command-Line Interface (CLI) commands along with brief explanations of what each command does:
+
+1. pwd (Print Working Directory):
+   -  Prints the current working directory, which is the directory you are currently in.
+
+2. ls (List):
+   - Lists files and directories in the current directory. Add options like `-l` for detailed information or `-a` to show hidden files.
+
+3. cd (Change Directory):
+   -  Changes the current working directory to the specified directory.
+
+4. cp (Copy):
+   -  Copies files or directories. Use `-r` for recursive copying.
+
+5. mv (Move):
+   -  Moves or renames files or directories.
+
+6. rm (Remove):
+   -  Removes files or directories. Use with caution, as this command deletes files permanently.
+
+7. mkdir (Make Directory):
+   -  Creates a new directory.
+
+8. touch:
+   -  Creates an empty file or updates the modification time of an existing file.
+
+9. nano (Text Editor):
+   -  Opens the nano text editor for editing files.
+
+10. cat (Concatenate and Display):
+   -  Displays the content of a file.
+
+11. grep (Global Regular Expression Print):
+   -  Searches for a pattern in files.
+
+12. chmod (Change Mode):
+   -  Changes the permissions of a file or directory.
+
+13. chown (Change Owner):
+   -  Changes the owner of a file or directory.
+
+14. ps (Process Status):
+   -  Displays information about currently running processes.
+
+15. kill (Terminate a Process):
+   -  Sends a signal to terminate a process.
+

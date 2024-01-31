@@ -1,0 +1,52 @@
+These are following queries for problem
+
+1. Insert values in customers table:
+ 
+ INSERT INTO customers (first_name, last_name, email, country)
+ VALUES ('John', 'Doe', 'john.doe@example.com', 'USA');
+
+
+2. Insert multiple values in customers table:
+  
+ INSERT INTO customers (first_name, last_name, email, country)
+VALUES
+  ('Alice', 'Smith', 'alice.smith@example.com', 'Canada'),
+  ('Bob', 'Johnson', 'bob.johnson@example.com', 'UK'),
+  ('Eva', 'Lee', 'eva.lee@example.com', 'Australia');
+
+
+3. Get number of customers per country:
+
+ SELECT country, COUNT(*) AS customer_count
+ FROM customers
+ GROUP BY country;
+
+
+4. Get orders with amount between 100 to 500:
+
+ SELECT * FROM orders
+ WHERE amount BETWEEN 100 AND 500;
+
+
+5. Get first name and last name of customers who bought Keypad:
+ 
+ SELECT customers.first_name, customers.last_name
+ FROM customers
+ JOIN orders ON customers.customer_id = orders.customer_id
+ JOIN order_items ON orders.order_id = order_items.order_id
+ WHERE order_items.product_name = 'Keypad';
+
+
+6. Get countries where shipping status is Pending:
+
+ SELECT DISTINCT country FROM customers
+ JOIN orders ON customers.customer_id = orders.customer_id
+ WHERE orders.shipping_status = 'Pending';
+
+
+7. Get number of orders per customer:
+
+ SELECT customers.customer_id, customers.first_name, customers.last_name, COUNT(orders.order_id) AS order_count
+ FROM customers
+ LEFT JOIN orders ON customers.customer_id = orders.customer_id
+ GROUP BY customers.customer_id, customers.first_name, customers.last_name;
