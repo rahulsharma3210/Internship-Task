@@ -8,7 +8,12 @@ function splitNumbers() {
     alert("Invalid input! Please enter values greater than zero.");
     return;
   }
+
+
   // Clear existing divs
+
+
+
   document.getElementById("output-container").innerHTML = "";
   // Calculate split value
   const splitValue = Math.floor(inputNumber / inputSplit);
@@ -28,6 +33,10 @@ function splitNumbers() {
   div.textContent = splitValue + rdr;
   document.getElementById("output-container").appendChild(div);
 }
+
+
+
+
 
 function getRandomColor() {
   const letters = "0123456789ABCDEF";
