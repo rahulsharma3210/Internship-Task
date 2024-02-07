@@ -132,27 +132,45 @@ p{
 
   
 table {
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   width: 50%;
+  margin-right: 40px;
   margin: 20px;
 }
 th, td {
-  border: 1px solid #dddddd;
+  /* border: 10px solid #dddddd; */
   padding: 8px;
   text-align: left;
 }
+ tbody tr{
+  border: solid 2px rgb(176, 167, 167);
+}
 th {
   background-color: #f2f2f2;
+  border: solid 20px rgb(171, 4, 4);
+
+}
+.headd{
+  border: solid 2px rgb(176, 167, 167);
+
 }
 
+
 .education{
-  margin-top: 15px;
+  /* margin-top: 15px;
+  padding-right: 500px; */
+  margin: auto;
 
 }
 .education h1{
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  margin: 20px;
 }
 .education table{
-  min-width: 880px;
+  min-width: 870px;
 }
 
+.about-me  a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the default text color of the parent */
+}

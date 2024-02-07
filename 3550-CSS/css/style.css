@@ -265,3 +265,8 @@ font-family: Arial, Helvetica, sans-serif ;
           padding: 5px;
         }
       }
+
+      .contact  a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Use the default text color of the parent */
+      }

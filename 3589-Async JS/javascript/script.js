@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       userListContainer.appendChild(userCard);
     });
   }
+
   window.getUserDetails = async function (userId) {
     try {
       const userDetailsResponse = await fetch(
@@ -37,7 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Name:</strong> ${userDetails.name}</p>
           <p><strong>Email:</strong> ${userDetails.email}</p>
           <p><strong>Phone:</strong> ${userDetails.phone}</p>
-        
+         
+          <p><strong>Projects:</strong></p>
+         
+
         `;
     } catch (error) {
       console.error("Error fetching user details:", error);
