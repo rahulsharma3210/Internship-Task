@@ -1,0 +1,120 @@
+    1  git commit
+    2  node --version
+    3  ls
+    4  touch myself.text
+    5  touch second-file
+    6  rm -f second-file
+    7  touch second-file
+    8  rm -f second-file
+    9  ls
+   10  mkdir newsfolder
+   11  rm -f newsfolder
+   12  ls
+   13  less myself.text
+   14  ls
+   15  cd ..
+   16  cd GIT-Bash-Practice
+   17  cd html-folder
+   18  cd ..
+   19  cd ..
+   20  cd GIT-Bash-Practice/html-folder
+   21  ls
+   22  cd newsfolder
+   23  cd newsfolder
+   24  cd ..
+   25  cd newsfolder
+   26  rmdir newsfolder
+   27  cd 3589-Async JS
+   28  cd ..
+   29  cd internship-Task/3589-Async JS
+   30  cd internship-Task
+   31  cd 3589-Async JS
+   32  pwd
+   33  cd html-folder
+   34  cd ..
+   35  mkdir newww
+   36  cd newww
+   37  touch newfile
+   38  rm newfile
+   39  cd ..
+   40  rm html-folder
+   41  cd html-folder
+   42  cd rm
+   43  mkdir html-folder
+   44  rmdir html-folder
+   45  cd ..
+   46  rmdir html-folder
+   47  rmdir -r html-folder
+   48  rm index
+   49  rmdir newww
+   50  rm mytext.text
+   51  touch heloo
+   52  rm heloo
+   53  rmdir newsfolder
+   54  rm myself.text
+   55  rmdir html-folder
+   56  cd html-folder
+   57  rm -r
+   58  cd ..
+   59  rm -r html-folder
+   60  pwd
+   61  ls
+   62  ls 1
+   63  mkdir folder-1
+   64  touch file-1
+   65  mkdir folder-2
+   66  touch file-2
+   67  cd folder-2
+   68  touch file-3
+   69  mkidir folder-4
+   70  mkdir folder-4
+   71  rmdir folder-4
+   72  rm file-3
+   73  touch file-5
+   74  rmdir folder-2
+   75  rm -r folder-2
+   76  rm -r folder-2
+   77  cd ..
+   78  rmdir folder-2
+   79  rm -r folder-2
+   80  rm file-1
+   81  rm file-2
+   82  rmdir folder-1
+   83  mkdir neww
+   84  touch hello
+   85  rmdir neww
+   86  mkdir folder1
+   87  rm hello
+   88  cd folder
+   89  cd folder1
+   90  touch hello0
+   91  rmdir folder1
+   92  rm -r folder1
+   93  rm -r folder1
+   94  rm -rf folder1
+   95  rm -rf folder1
+   96  mkdir folder2
+   97  cd ..
+   98  mkdir folder4
+   99  rmdir folder4
+  100  touch file1
+  101  mv file1 file2
+  102  mv file2 GIT-Bash-Practice/folder1
+  103  mkdir folder5
+  104  mv folder5 GIT-Bash-pracice/folder1
+  105  ls
+  106  pwd
+  107  mv file2 GIT-Bash-Practice/folder1
+  108  mv file2 file5
+  109  cd ..
+  110  ls
+  111  cd uders
+  112  cd This PC
+  113  docker --version
+  114  docker info
+  115  touch first.text
+  116  rm first.text
+  117  cd 3580-CLI
+  118  touch first.text
+  119  history >> one.txt
+  120  history >> first.text

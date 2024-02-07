@@ -45,3 +45,10 @@
 15. kill (Terminate a Process):
    -  Sends a signal to terminate a process.
 
+
+// given task in meeting
+commands For CLI--> 
+
+make a new file one.txt--> touch first.text
+write some stuff in that file
+append all the content coming from history command to that file --> history >> one.txt
